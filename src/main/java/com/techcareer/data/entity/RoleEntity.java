@@ -1,5 +1,6 @@
 package com.techcareer.data.entity;
 
+import com.techcareer.audit.AuditingAwareBaseEntity;
 import com.techcareer.role.ERole;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
@@ -19,7 +20,7 @@ import java.util.Date;
 @Builder
 @Entity(name = "Roles")
 @Table(name = "roles")
-public class RoleEntity implements Serializable {
+public class RoleEntity extends AuditingAwareBaseEntity implements Serializable {
 
     public static final Long serialVersionUID = 1L;
 

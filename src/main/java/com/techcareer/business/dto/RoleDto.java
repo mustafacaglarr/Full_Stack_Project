@@ -1,6 +1,7 @@
 package com.techcareer.business.dto;
 
 import com.techcareer.annotation.AnnotationUniqueRoleName;
+import com.techcareer.audit.AuditingAwareBaseDto;
 import com.techcareer.role.ERole;
 import jakarta.validation.constraints.NotEmpty;
 import lombok.AllArgsConstructor;
@@ -18,7 +19,7 @@ import java.util.Date;
 @NoArgsConstructor
 @Log4j2
 @Builder
-public class RoleDto implements Serializable {
+public class RoleDto extends AuditingAwareBaseDto implements Serializable {
 
     public static final Long serialVersionUID = 1L;
 

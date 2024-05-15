@@ -59,16 +59,16 @@ public class RoleApiImpl implements IRoleApi<RoleDto> {
         return ResponseEntity.status(201).body(iRoleService.roleServiceCreate(roleDtoData));
     }
 
-    @GetMapping("(/list")
+    @GetMapping("/list")
     @Override
     public ResponseEntity<List<RoleDto>> roleServiceList() {
         log.info("Role Api Listelendi");
 
-        return null;
+        return ResponseEntity.ok(iRoleService.roleServiceList());
     }
 
     @Override
-    @GetMapping({"/find","/find/id"})
+    @GetMapping({"/find","/find/{id}"})
     public ResponseEntity<?> roleServiceFindById(@PathVariable(name = "id",required = false) Long id) {
 
         RoleDto roleFindApi =(RoleDto) iRoleService.roleServiceFindById(id);
@@ -89,7 +89,7 @@ public class RoleApiImpl implements IRoleApi<RoleDto> {
     }
 
     @Override
-    @PutMapping({"/update","/update/id"})
+    @PutMapping({"/update","/update/{id}"})
     public ResponseEntity<?> roleServiceUpdateById(@PathVariable(name = "id",required = false) Long id, @Valid @RequestBody RoleDto roleDto) {
 
         RoleDto roleUpdateApi =(RoleDto) iRoleService.roleServiceUpdateById(id,roleDto);
@@ -111,11 +111,10 @@ public class RoleApiImpl implements IRoleApi<RoleDto> {
     }
 
     @Override
-    @DeleteMapping({"/delete","/delete/id"})
+    @DeleteMapping({"/delete","/delete/{id}"})
     public ResponseEntity<?> roleServiceDeleteById(@PathVariable(name = "id",required = false) Long id) {
         RoleDto roleDto =(RoleDto) iRoleService.roleServiceDeleteById(id);
         log.info("Role Api Silindi");
-
-        return ResponseEntity.ok(iRoleService.roleServiceDeleteById(id));
+        return ResponseEntity.ok(roleDto);
     }
 }

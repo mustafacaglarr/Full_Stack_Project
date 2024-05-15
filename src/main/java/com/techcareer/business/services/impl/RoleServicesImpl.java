@@ -57,13 +57,13 @@ public class RoleServicesImpl implements IRoleService<RoleDto, RoleEntity> {
 
     @Override
     public List<RoleDto> roleServiceList() {
-
         //Entity List
         List<RoleEntity> roleEntityList1 = iRoleRepository.findAll();
-        //Dto List
+
+        // Dto List
         List<RoleDto> roleDtoList = new ArrayList<>();
 
-        //Entity to Dto List
+        // Entity To Dto List
         for (RoleEntity tempEntity : roleEntityList1) {
             RoleDto roleDto1 = entityToDto(tempEntity);
             roleDtoList.add(roleDto1);
@@ -73,49 +73,53 @@ public class RoleServicesImpl implements IRoleService<RoleDto, RoleEntity> {
 
     @Override
     public RoleDto roleServiceFindById(Long id) {
-        if (id == null) {
+
+        Boolean booleanRoleEntityFindById = iRoleRepository.findById(id).isPresent();
+        RoleEntity roleEntity = null;
+
+        if (booleanRoleEntityFindById) {
+            roleEntity = iRoleRepository.findById(id).orElseThrow(
+                    () -> new Resource404NotFoundException(id + " nolu ID Bulunamadı")
+            );
+        } else if (!booleanRoleEntityFindById) {
             throw new MustafaCaglarException("Roles Dto id boş değer geldi");
         }
-
-        RoleEntity roleEntity = iRoleRepository.findById(id).orElseThrow(
-                () -> new Resource404NotFoundException(id + " nolu ID Bulunamadı")
-        );
-
         return entityToDto(roleEntity);
     }
 
+    // UPDATE (ROLE)
     @Override
-    @Transactional
+    @Transactional// Create,Update,Delete
     public RoleDto roleServiceUpdateById(Long id, RoleDto roleDto) {
-
+        // Find
         RoleDto roleDtoFind = roleServiceFindById(id);
 
+        // Update
         RoleEntity roleUpdateEntity = dtoToEntity(roleDtoFind);
-        if(roleUpdateEntity!=null){
+        if (roleUpdateEntity != null) {
             roleUpdateEntity.setRoleName(roleDto.getRoleName());
             iRoleRepository.save(roleUpdateEntity);
         }
-
-
+        // ID ve Date Dto üzerinde Set yapıyorum
         roleDto.setRoleId(roleUpdateEntity.getRoleId());
         roleDto.setSystemCreatedDate(roleUpdateEntity.getSystemCreatedDate());
-
-
         return entityToDto(roleUpdateEntity);
     }
 
+    // DELETE (ROLE)
     @Override
-    @Transactional
+    @Transactional// Create,Update,Delete
     public RoleDto roleServiceDeleteById(Long id) {
-
+        // Find
         RoleDto roleDtoFind = roleServiceFindById(id);
 
         RoleEntity roleDeleteEntity = dtoToEntity(roleDtoFind);
         if (roleDeleteEntity != null) {
             iRoleRepository.deleteById(id);
             return roleDtoFind;
-        } else {
-            throw new MustafaCaglarException(roleDtoFind+"nolu data silinemedi");
+        }else {
+            throw new MustafaCaglarException(roleDtoFind+ "nolu data silinemedi");
         }
+        // return null;
     }
 }
