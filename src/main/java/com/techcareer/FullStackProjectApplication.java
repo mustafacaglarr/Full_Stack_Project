@@ -3,9 +3,13 @@ package com.techcareer;
 import jakarta.annotation.PostConstruct;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 
 import java.util.TimeZone;
 
+
+
+@EnableJpaAuditing(auditorAwareRef = "auditorAwareBeanMethod")
 @SpringBootApplication(exclude = {
 		//SecurityAutoConfiguration.class,
 		org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration.class,
