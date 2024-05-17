@@ -1461,3 +1461,10 @@ java.lang.IllegalArgumentException: The given id must not be null
 2024-05-16T01:11:52.873+03:00 DEBUG 12732 --- [http-nio-4444-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [*/*] and supported [application/json, application/*+json]
 2024-05-16T01:11:52.874+03:00 DEBUG 12732 --- [http-nio-4444-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[RoleDto(roleId=3, roleName=USER, systemCreatedDate=2024-05-16 03:38:13.838), RoleDto(roleId=4, role (truncated)...]
 2024-05-16T01:11:52.877+03:00 DEBUG 12732 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-16T01:18:12.274+03:00  INFO 12732 --- [SpringApplicationShutdownHook] c.t.bean.SwaggerOpenApiBeanClass         : swagger Open Api After Bean bitti
+2024-05-16T01:18:12.277+03:00  INFO 12732 --- [SpringApplicationShutdownHook] c.t.bean.PasswordEncoderBeanClass        : password Encoder After Bean bitti
+2024-05-16T01:18:12.277+03:00  INFO 12732 --- [SpringApplicationShutdownHook] c.techcareer.bean.ModelMapperBeanClass   : Model mapper After bean bitti
+2024-05-16T01:18:12.277+03:00  INFO 12732 --- [SpringApplicationShutdownHook] com.techcareer.bean.Locale18NBeanClass   : locale 18N After Bean Method bitti
+2024-05-16T01:18:12.278+03:00  INFO 12732 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-05-16T01:18:12.287+03:00  INFO 12732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-05-16T01:18:12.291+03:00  INFO 12732 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
