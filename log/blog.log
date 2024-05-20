@@ -211,3 +211,156 @@
 2024-05-20T00:46:31.884+03:00  INFO 3684 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2024-05-20T00:46:31.899+03:00  INFO 3684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2024-05-20T00:46:31.907+03:00  INFO 3684 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-05-20T10:00:20.253+03:00  INFO 9048 --- [main] c.t.FullStackProjectApplication          : Starting FullStackProjectApplication using Java 21.0.2 with PID 9048 (C:\spring\Full_Stack_Project\target\classes started by Mustafa in C:\spring\Full_Stack_Project)
+2024-05-20T10:00:20.255+03:00  INFO 9048 --- [main] c.t.FullStackProjectApplication          : The following 1 profile is active: "frontend"
+2024-05-20T10:00:21.970+03:00  INFO 9048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-05-20T10:00:22.050+03:00  INFO 9048 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 1 JPA repository interfaces.
+2024-05-20T10:00:22.801+03:00  INFO 9048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 4444 (http)
+2024-05-20T10:00:22.810+03:00  INFO 9048 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-05-20T10:00:22.811+03:00  INFO 9048 --- [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.15]
+2024-05-20T10:00:22.889+03:00  INFO 9048 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-05-20T10:00:22.890+03:00  INFO 9048 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2543 ms
+2024-05-20T10:00:22.982+03:00  INFO 9048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-05-20T10:00:23.264+03:00  INFO 9048 --- [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:file:./memory_persist/blog user=SA
+2024-05-20T10:00:23.265+03:00  INFO 9048 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-05-20T10:00:23.275+03:00  INFO 9048 --- [main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:h2:file:./memory_persist/blog'
+2024-05-20T10:00:23.351+03:00 DEBUG 9048 --- [main] o.s.w.f.ServerHttpObservationFilter      : Filter 'webMvcObservationFilter' configured for use
+2024-05-20T10:00:23.351+03:00 DEBUG 9048 --- [main] o.s.w.s.r.ResourceUrlEncodingFilter      : Filter 'resourceUrlEncodingFilter' configured for use
+2024-05-20T10:00:23.797+03:00  INFO 9048 --- [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-05-20T10:00:24.639+03:00  INFO 9048 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-05-20T10:00:24.645+03:00  INFO 9048 --- [main] com.techcareer.bean.Locale18NBeanClass   : swagger Open Api Before Bean başladı
+2024-05-20T10:00:24.646+03:00  INFO 9048 --- [main] c.techcareer.bean.ModelMapperBeanClass   : Model mapper bean Before başladı
+2024-05-20T10:00:24.647+03:00  INFO 9048 --- [main] c.t.bean.PasswordEncoderBeanClass        : password Encoder Before Bean başladı
+2024-05-20T10:00:24.647+03:00  INFO 9048 --- [main] c.t.bean.SwaggerOpenApiBeanClass         : swagger Open Api Before Bean başladı
+2024-05-20T10:00:25.146+03:00  WARN 9048 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-05-20T10:00:25.246+03:00 DEBUG 9048 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2024-05-20T10:00:25.276+03:00  INFO 9048 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2024-05-20T10:00:25.325+03:00 DEBUG 9048 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 10 mappings in 'requestMappingHandlerMapping'
+2024-05-20T10:00:25.695+03:00 DEBUG 9048 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /swagger-ui*/*swagger-initializer.js, /swagger-ui*/**] in 'resourceHandlerMapping'
+2024-05-20T10:00:25.703+03:00 DEBUG 9048 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 1 @ExceptionHandler, 1 ResponseBodyAdvice
+2024-05-20T10:00:26.030+03:00  INFO 9048 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 16 endpoint(s) beneath base path '/actuator'
+2024-05-20T10:00:26.104+03:00  INFO 9048 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 4444 (http) with context path ''
+2024-05-20T10:00:26.113+03:00  INFO 9048 --- [main] c.t.FullStackProjectApplication          : Started FullStackProjectApplication in 6.556 seconds (process running for 7.397)
+2024-05-20T10:00:26.509+03:00  INFO 9048 --- [RMI TCP Connection(3)-192.168.2.87] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-05-20T10:00:26.510+03:00  INFO 9048 --- [RMI TCP Connection(3)-192.168.2.87] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-05-20T10:00:26.510+03:00 DEBUG 9048 --- [RMI TCP Connection(3)-192.168.2.87] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2024-05-20T10:00:26.510+03:00 DEBUG 9048 --- [RMI TCP Connection(3)-192.168.2.87] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2024-05-20T10:00:26.510+03:00 DEBUG 9048 --- [RMI TCP Connection(3)-192.168.2.87] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2024-05-20T10:00:26.512+03:00 DEBUG 9048 --- [RMI TCP Connection(3)-192.168.2.87] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@530aa75c
+2024-05-20T10:00:26.512+03:00 DEBUG 9048 --- [RMI TCP Connection(3)-192.168.2.87] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@6015c745
+2024-05-20T10:00:26.513+03:00 DEBUG 9048 --- [RMI TCP Connection(3)-192.168.2.87] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2024-05-20T10:00:26.513+03:00  INFO 9048 --- [RMI TCP Connection(3)-192.168.2.87] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-05-20T10:01:08.022+03:00 DEBUG 9048 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/role/api/v1.0.0/list", parameters={}
+2024-05-20T10:01:08.037+03:00 DEBUG 9048 --- [http-nio-4444-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceList()
+2024-05-20T10:01:08.050+03:00  INFO 9048 --- [http-nio-4444-exec-1] c.t.controller.api.impl.RoleApiImpl      : Role Api Listelendi
+2024-05-20T10:01:08.304+03:00 DEBUG 9048 --- [http-nio-4444-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:01:08.305+03:00 DEBUG 9048 --- [http-nio-4444-exec-1] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[RoleDto(roleId=39, roleName=DENEME, systemCreatedDate=2024-05-18 16:14:48.424), RoleDto(roleId=41,  (truncated)...]
+2024-05-20T10:01:08.337+03:00 DEBUG 9048 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-20T10:01:08.577+03:00 DEBUG 9048 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/role/api/v1.0.0/list", parameters={}
+2024-05-20T10:01:08.579+03:00 DEBUG 9048 --- [http-nio-4444-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceList()
+2024-05-20T10:01:08.580+03:00  INFO 9048 --- [http-nio-4444-exec-3] c.t.controller.api.impl.RoleApiImpl      : Role Api Listelendi
+2024-05-20T10:01:08.588+03:00 DEBUG 9048 --- [http-nio-4444-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:01:08.588+03:00 DEBUG 9048 --- [http-nio-4444-exec-3] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [[RoleDto(roleId=39, roleName=DENEME, systemCreatedDate=2024-05-18 16:14:48.424), RoleDto(roleId=41,  (truncated)...]
+2024-05-20T10:01:08.589+03:00 DEBUG 9048 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-20T10:01:11.612+03:00 DEBUG 9048 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : DELETE "/role/api/v1.0.0/delete/42", parameters={}
+2024-05-20T10:01:11.613+03:00 DEBUG 9048 --- [http-nio-4444-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceDeleteById(Long)
+2024-05-20T10:01:11.662+03:00  INFO 9048 --- [http-nio-4444-exec-2] c.t.controller.api.impl.RoleApiImpl      : Role Api Silindi
+2024-05-20T10:01:11.664+03:00 DEBUG 9048 --- [http-nio-4444-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:01:11.664+03:00 DEBUG 9048 --- [http-nio-4444-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RoleDto(roleId=42, roleName=aaaa, systemCreatedDate=2024-05-18 16:42:24.367)]
+2024-05-20T10:01:11.665+03:00 DEBUG 9048 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-20T10:01:14.355+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] o.s.web.servlet.DispatcherServlet        : DELETE "/role/api/v1.0.0/delete/41", parameters={}
+2024-05-20T10:01:14.355+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceDeleteById(Long)
+2024-05-20T10:01:14.358+03:00  INFO 9048 --- [http-nio-4444-exec-7] c.t.controller.api.impl.RoleApiImpl      : Role Api Silindi
+2024-05-20T10:01:14.358+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:01:14.358+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RoleDto(roleId=41, roleName=A, systemCreatedDate=2024-05-18 16:17:49.273)]
+2024-05-20T10:01:14.359+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-20T10:01:28.915+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/role/api/v1.0.0/create", parameters={}
+2024-05-20T10:01:28.916+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceCreate(RoleDto)
+2024-05-20T10:01:28.944+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RoleDto(roleId=null, roleName=Para yatır, systemCreatedDate=null)]
+2024-05-20T10:01:29.026+03:00  INFO 9048 --- [http-nio-4444-exec-5] c.t.controller.api.impl.RoleApiImpl      : Role Api Eklendi
+2024-05-20T10:01:29.035+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:01:29.036+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RoleDto(roleId=44, roleName=Para yatır, systemCreatedDate=Mon May 20 12:31:29 IST 2024)]
+2024-05-20T10:01:29.037+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-05-20T10:01:33.725+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] o.s.web.servlet.DispatcherServlet        : DELETE "/role/api/v1.0.0/delete/39", parameters={}
+2024-05-20T10:01:33.726+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceDeleteById(Long)
+2024-05-20T10:01:33.730+03:00  INFO 9048 --- [http-nio-4444-exec-6] c.t.controller.api.impl.RoleApiImpl      : Role Api Silindi
+2024-05-20T10:01:33.730+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:01:33.730+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RoleDto(roleId=39, roleName=DENEME, systemCreatedDate=2024-05-18 16:14:48.424)]
+2024-05-20T10:01:33.731+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-20T10:01:59.960+03:00 DEBUG 9048 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.html", parameters={}
+2024-05-20T10:01:59.973+03:00 DEBUG 9048 --- [http-nio-4444-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-05-20T10:01:59.995+03:00 DEBUG 9048 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-20T10:02:00.176+03:00 DEBUG 9048 --- [http-nio-4444-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-initializer.js", parameters={}
+2024-05-20T10:02:00.177+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-standalone-preset.js", parameters={}
+2024-05-20T10:02:00.177+03:00 DEBUG 9048 --- [http-nio-4444-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-05-20T10:02:00.177+03:00 DEBUG 9048 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/index.css", parameters={}
+2024-05-20T10:02:00.177+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui.css", parameters={}
+2024-05-20T10:02:00.178+03:00 DEBUG 9048 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/swagger-ui/swagger-ui-bundle.js", parameters={}
+2024-05-20T10:02:00.179+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-05-20T10:02:00.179+03:00 DEBUG 9048 --- [http-nio-4444-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-05-20T10:02:00.180+03:00 DEBUG 9048 --- [http-nio-4444-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-05-20T10:02:00.180+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/webjars/]]
+2024-05-20T10:02:00.181+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-20T10:02:00.182+03:00 DEBUG 9048 --- [http-nio-4444-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-20T10:02:00.183+03:00 DEBUG 9048 --- [http-nio-4444-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-20T10:02:00.184+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 304 NOT_MODIFIED
+2024-05-20T10:02:00.192+03:00 DEBUG 9048 --- [http-nio-4444-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-20T10:02:00.572+03:00 DEBUG 9048 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs/swagger-config", parameters={}
+2024-05-20T10:02:00.573+03:00 DEBUG 9048 --- [http-nio-4444-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.ui.SwaggerConfigResource#openapiJson(HttpServletRequest)
+2024-05-20T10:02:00.576+03:00 DEBUG 9048 --- [http-nio-4444-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [*/*] and supported [application/json]
+2024-05-20T10:02:00.576+03:00 DEBUG 9048 --- [http-nio-4444-exec-2] m.m.a.RequestResponseBodyMethodProcessor : Writing [{configUrl=/v3/api-docs/swagger-config, oauth2RedirectUrl=http://localhost:4444/swagger-ui/oauth2-re (truncated)...]
+2024-05-20T10:02:00.578+03:00 DEBUG 9048 --- [http-nio-4444-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-20T10:02:00.601+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/v3/api-docs", parameters={}
+2024-05-20T10:02:00.602+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springdoc.webmvc.api.OpenApiWebMvcResource#openapiJson(HttpServletRequest, String, Locale)
+2024-05-20T10:02:00.752+03:00  WARN 9048 --- [http-nio-4444-exec-7] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.techcareer.controller.api.impl.RoleApiImpl
+2024-05-20T10:02:00.896+03:00  WARN 9048 --- [http-nio-4444-exec-7] ocalVariableTableParameterNameDiscoverer : Using deprecated '-debug' fallback for parameter name resolution. Compile the affected code with '-parameters' instead or avoid its introspection: com.techcareer.error.CustomErrorHandleWebRequest
+2024-05-20T10:02:00.967+03:00  INFO 9048 --- [http-nio-4444-exec-7] o.springdoc.api.AbstractOpenApiResource  : Init duration for springdoc-openapi is: 358 ms
+2024-05-20T10:02:00.997+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, */*] and supported [application/json]
+2024-05-20T10:02:00.997+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Writing ["{"openapi":"3.0.1","info":{"title":"title bilgisi","description":"description bilgisi","termsOfServi (truncated)..."]
+2024-05-20T10:02:01.000+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-20T10:02:04.140+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2024-05-20T10:02:04.143+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2024-05-20T10:02:04.145+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2024-05-20T10:02:04.146+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2024-05-20T10:02:04.152+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2024-05-20T10:02:04.153+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.error.CustomErrorHandleWebRequest#handleErrorMethod(WebRequest)
+2024-05-20T10:02:04.156+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json]
+2024-05-20T10:02:04.158+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(path=/favicon.ico, message=No message available, error=null, status=404, createdDate=Mon M (truncated)...]
+2024-05-20T10:02:04.162+03:00 DEBUG 9048 --- [http-nio-4444-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2024-05-20T10:45:53.888+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/role/api/v1.0.0/create", parameters={}
+2024-05-20T10:45:53.931+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceCreate(RoleDto)
+2024-05-20T10:45:53.994+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RoleDto(roleId=null, roleName=aaa, systemCreatedDate=null)]
+2024-05-20T10:45:54.208+03:00  INFO 9048 --- [http-nio-4444-exec-6] c.t.controller.api.impl.RoleApiImpl      : Role Api Eklendi
+2024-05-20T10:45:54.224+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:45:54.227+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RoleDto(roleId=45, roleName=aaa, systemCreatedDate=Mon May 20 13:15:54 IST 2024)]
+2024-05-20T10:45:54.233+03:00 DEBUG 9048 --- [http-nio-4444-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 201 CREATED
+2024-05-20T10:46:05.012+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] o.s.web.servlet.DispatcherServlet        : PUT "/role/api/v1.0.0/update/45", parameters={}
+2024-05-20T10:46:05.015+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceUpdateById(Long, RoleDto)
+2024-05-20T10:46:05.159+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RoleDto(roleId=45, roleName=bbbb, systemCreatedDate=Mon May 20 13:15:54 IST 2024)]
+2024-05-20T10:46:05.203+03:00  INFO 9048 --- [http-nio-4444-exec-7] c.t.controller.api.impl.RoleApiImpl      : Role Api Güncellendi
+2024-05-20T10:46:05.217+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:46:05.219+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RoleDto(roleId=45, roleName=bbbb, systemCreatedDate=2024-05-20 13:15:54.186)]
+2024-05-20T10:46:05.222+03:00 DEBUG 9048 --- [http-nio-4444-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-20T10:46:09.301+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] o.s.web.servlet.DispatcherServlet        : PUT "/role/api/v1.0.0/update/45", parameters={}
+2024-05-20T10:46:09.302+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceUpdateById(Long, RoleDto)
+2024-05-20T10:46:09.306+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RoleDto(roleId=45, roleName=bbbb, systemCreatedDate=Mon May 20 13:15:54 IST 2024)]
+2024-05-20T10:46:09.585+03:00  WARN 9048 --- [http-nio-4444-exec-10] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [1] in public org.springframework.http.ResponseEntity<?> com.techcareer.controller.api.impl.RoleApiImpl.roleServiceUpdateById(java.lang.Long,com.techcareer.business.dto.RoleDto): [Field error in object 'roleDto' on field 'roleName': rejected value [bbbb]; codes [AnnotationUniqueRoleName.roleDto.roleName,AnnotationUniqueRoleName.roleName,AnnotationUniqueRoleName.java.lang.String,AnnotationUniqueRoleName]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [roleDto.roleName,roleName]; arguments []; default message [roleName]]; default message [Rol adınızı benzersiz olmalıdır]] ]
+2024-05-20T10:46:09.586+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 400 BAD_REQUEST
+2024-05-20T10:46:09.588+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for PUT "/error", parameters={}
+2024-05-20T10:46:09.588+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.error.CustomErrorHandleWebRequest#handleErrorMethod(WebRequest)
+2024-05-20T10:46:09.593+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:46:09.596+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] m.m.a.RequestResponseBodyMethodProcessor : Writing [ApiResult(path=/role/api/v1.0.0/update/45, message=Validation failed for object='roleDto'. Error cou (truncated)...]
+2024-05-20T10:46:09.608+03:00 DEBUG 9048 --- [http-nio-4444-exec-10] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 400
+2024-05-20T10:46:09.772+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] o.s.web.servlet.DispatcherServlet        : PUT "/role/api/v1.0.0/update/44", parameters={}
+2024-05-20T10:46:09.773+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceUpdateById(Long, RoleDto)
+2024-05-20T10:46:09.777+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] m.m.a.RequestResponseBodyMethodProcessor : Read "application/json;charset=UTF-8" to [RoleDto(roleId=44, roleName=Para yatır, systemCreatedDate=Mon May 20 12:31:29 IST 2024)]
+2024-05-20T10:46:09.818+03:00  INFO 9048 --- [http-nio-4444-exec-5] c.t.controller.api.impl.RoleApiImpl      : Role Api Güncellendi
+2024-05-20T10:46:09.833+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:46:09.833+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RoleDto(roleId=44, roleName=Para yatır, systemCreatedDate=2024-05-20 12:31:29.013)]
+2024-05-20T10:46:09.834+03:00 DEBUG 9048 --- [http-nio-4444-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2024-05-20T10:46:17.061+03:00 DEBUG 9048 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : DELETE "/role/api/v1.0.0/delete/45", parameters={}
+2024-05-20T10:46:17.062+03:00 DEBUG 9048 --- [http-nio-4444-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.techcareer.controller.api.impl.RoleApiImpl#roleServiceDeleteById(Long)
+2024-05-20T10:46:17.075+03:00  INFO 9048 --- [http-nio-4444-exec-4] c.t.controller.api.impl.RoleApiImpl      : Role Api Silindi
+2024-05-20T10:46:17.076+03:00 DEBUG 9048 --- [http-nio-4444-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json', given [application/json, text/plain, */*] and supported [application/json, application/*+json]
+2024-05-20T10:46:17.076+03:00 DEBUG 9048 --- [http-nio-4444-exec-4] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [RoleDto(roleId=45, roleName=bbbb, systemCreatedDate=2024-05-20 13:15:54.186)]
+2024-05-20T10:46:17.076+03:00 DEBUG 9048 --- [http-nio-4444-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
